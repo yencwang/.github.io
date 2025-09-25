@@ -1,67 +1,42 @@
-/* === 全站字體 === */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
-
-body {
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #333;
-  line-height: 1.6;
-  max-width: 1000px;
-  margin: 0 auto; /* 中央對齊 */
-}
-
-/* === Header 區域 === */
+/* 讓 header 在同一行對齊，左邊名字、右邊選單 */
 .site-header {
-  padding: 30px 0 20px; /* 調整上、下間距 */
-  border-bottom: 1px solid #ddd; /* 底部分隔線 */
-}
-
-.header-container {
   display: flex;
-  justify-content: space-between; /* 左右分佈 */
+  justify-content: space-between; /* 左右分開 */
   align-items: center; /* 垂直置中 */
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
 }
 
-/* 名字部分 */
+/* 調整名字字體大小 */
 .site-name {
-  font-size: 26px;
-  font-weight: 700;
-  color: #111;
-  letter-spacing: 1px;
-  font-family: 'Lora', serif;
+  font-size: 1.5rem; /* 原本可能太大，這樣比較自然 */
+  font-weight: 600;
+  color: #333;
+  margin: 0;
 }
 
-/* 導覽列 */
+/* 導覽列設定 */
+.navbar {
+  display: flex;
+  gap: 20px; /* 選單間距 */
+}
+
+/* 導覽列連結設定 */
 .navbar a {
-  margin-left: 25px;
-  font-size: 16px;
   text-decoration: none;
-  color: #2a5d9f;
-  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  padding: 5px 10px;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #1b3d70;
+  color: #0077cc; /* 滑過時變色 */
 }
 
 .navbar a.active {
-  border-bottom: 2px solid #2a5d9f;
-  padding-bottom: 2px;
-}
-
-/* === 主要內容區 === */
-main {
-  padding: 40px 20px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0077cc;
 }
 
