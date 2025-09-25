@@ -1,115 +1,40 @@
-/* === 全站統一字體與排版 === */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-/* ========== 導覽列樣式 ========== */
+/* Header 設計 */
 .site-header {
-  display: flex;                /* 讓名字與選單在同一排 */
-  justify-content: space-between; /* 左右分開排列 */
-  align-items: center;          /* 垂直置中 */
-  padding: 20px 40px;
-  max-width: 1000px;
-  margin: 0 auto;               /* 置中整個 header */
-  border-bottom: 1px solid #ddd; /* 下方淡灰線條 */
-}
-
-/* 左邊的名字 */
-.site-name {
-  font-family: 'Lora', serif;
-  font-size: 26px;
-  font-weight: bold;
-  color: #111;
-}
-
-/* 右邊的選單 */
-.navbar {
   display: flex;
-  gap: 20px; /* 選單間距 */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
 }
 
-/* 導覽列連結 */
+.site-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
 .navbar a {
   text-decoration: none;
-  color: #2a5d9f;
-  font-weight: 600;
+  margin-left: 20px;
   font-size: 18px;
+  color: #333;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #1b3d70;
-  text-decoration: underline;
+  color: #0077cc;
 }
 
-/* 目前頁面標記 */
 .navbar a.active {
-  color: #000;
-  border-bottom: 2px solid #2a5d9f;
+  font-weight: bold;
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 3px;
 }
 
-
-
-body {
-    font-family: 'Lora', serif; /* 優雅學術字體 */
-    line-height: 1.8;
-    font-size: 18px;
-    color: #333;
-    margin: 40px auto;
-    max-width: 900px; /* 限制寬度讓內容更專注 */
-    background-color: #fff;
-    
-}
-
-/* 標題設計 */
-h1, h2, h3, h4 {
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 15px;
-}
-
-/* 連結設計 */
-a {
-    color: #2a5d9f;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* 導航列 */
-nav {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-nav a {
-    margin: 0 15px;
-    font-weight: 600;
-    color: #2a5d9f;
-}
-
-nav a:hover {
-    color: #1b3d70;
-    text-decoration: underline;
-}
-
-/* 內容區塊 */
-section {
-    margin-bottom: 40px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    margin-top: 60px;
-}
-
-.cv-page {
-  font-size: 16px;
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
