@@ -1,6 +1,53 @@
 /* === 全站統一字體與排版 === */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
+/* ========== 導覽列樣式 ========== */
+.site-header {
+  display: flex;                /* 讓名字與選單在同一排 */
+  justify-content: space-between; /* 左右分開排列 */
+  align-items: center;          /* 垂直置中 */
+  padding: 20px 40px;
+  max-width: 1000px;
+  margin: 0 auto;               /* 置中整個 header */
+  border-bottom: 1px solid #ddd; /* 下方淡灰線條 */
+}
+
+/* 左邊的名字 */
+.site-name {
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* 右邊的選單 */
+.navbar {
+  display: flex;
+  gap: 20px; /* 選單間距 */
+}
+
+/* 導覽列連結 */
+.navbar a {
+  text-decoration: none;
+  color: #2a5d9f;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #1b3d70;
+  text-decoration: underline;
+}
+
+/* 目前頁面標記 */
+.navbar a.active {
+  color: #000;
+  border-bottom: 2px solid #2a5d9f;
+}
+
+
+
 body {
     font-family: 'Lora', serif; /* 優雅學術字體 */
     line-height: 1.8;
