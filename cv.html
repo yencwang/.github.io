@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My CV</title>
+  <title>CV | YC Wang</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="cv-page">
- 
+  <!-- Header 導覽列 (必須在 body 最上方) -->
+  <header class="site-header">
+    <div class="site-name">YC Wang</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+  </header>
 
-  <section>
-    <h1>Yen Chun Wang</h1>
-    <!-- 內嵌 PDF -->
-    <iframe src="cv.pdf" style="width:100%; height:800px; border:none;"></iframe>
-    <!-- 如果 PDF 沒有顯示，可以提供下載連結 -->
-    <p><a href="cv.pdf" target="_blank">Download CV (PDF)</a></p>
-  </section>
-
-
+  <!-- 主要內容區 -->
+  <main>
+    <section>
+      <h1>Curriculum Vitae</h1>
+      <!-- 內嵌 PDF -->
+      <iframe src="cv.pdf" style="width:100%; height:800px; border:none;"></iframe>
+      <!-- 如果 PDF 無法顯示，提供下載連結 -->
+      <p><a href="cv.pdf" target="_blank">Download CV (PDF)</a></p>
+    </section>
+  </main>
 </body>
- <header class="site-header">
-  <div class="site-name">YC Wang</div>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="cv.html" class="active">CV</a>
-       <a href="index.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="teaching.html">Teaching</a>
-  </nav>
-</header>
-
-
 </html>
