@@ -1,40 +1,67 @@
+/* === 全站字體 === */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
 body {
+  font-family: 'Lora', serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto; /* 中央對齊 */
 }
 
-/* Header 設計 */
+/* === Header 區域 === */
 .site-header {
+  padding: 30px 0 20px; /* 調整上、下間距 */
+  border-bottom: 1px solid #ddd; /* 底部分隔線 */
+}
+
+.header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ddd;
+  justify-content: space-between; /* 左右分佈 */
+  align-items: center; /* 垂直置中 */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* 名字部分 */
 .site-name {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 1px;
+  font-family: 'Lora', serif;
 }
 
+/* 導覽列 */
 .navbar a {
+  margin-left: 25px;
+  font-size: 16px;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 18px;
-  color: #333;
+  color: #2a5d9f;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #0077cc;
+  color: #1b3d70;
 }
 
 .navbar a.active {
-  font-weight: bold;
-  color: #0077cc;
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 3px;
+  border-bottom: 2px solid #2a5d9f;
+  padding-bottom: 2px;
+}
+
+/* === 主要內容區 === */
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
