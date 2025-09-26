@@ -35,7 +35,7 @@ body {
   align-items: center;        /* 垂直置中 */
   gap: 20px;                  /* 文字與圖片的間距 */
  .intro-image img {
-  max-width: 20%;   /* 佔螢幕寬度 20%，在不同裝置自動調整 */
+  max-width: 50%;   /* 佔螢幕寬度 20%，在不同裝置自動調整 */
   min-width: 120px; /* 不要太小 */
   height: auto;              /* 置中整個區塊 */
   padding: 0px 40px;   
