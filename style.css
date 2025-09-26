@@ -47,6 +47,13 @@ body {
   max-width: 600px;               /* 避免文字太寬 */
 }
 
+.intro-text h1 {
+  margin-top: 0;    /* 移除上方空白，避免比圖片低 */
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  }
+
 /* 右側圖片區域 */
 .intro-image {
   flex: 1;                         /* 右側占比較小 */
