@@ -28,40 +28,37 @@ body {
   color: #111;
 }
 
-/* 讓 intro-text 和 intro-image 排成左右 */
+/* 外框容器：控制整體排版 */
 .intro-container {
-  display: flex;              /* 啟用 Flexbox */
-  justify-content: space-between; /* 左右分開 */
-  align-items: center;        /* 垂直置中 */
-  gap: 20px;                  /* 文字與圖片的間距 */
- .intro-image img {
-   min-width: 600px; /* 不要太小 */
-  height: auto;              /* 置中整個區塊 */
-  padding: 0px 40px;   
-  flex-wrap: wrap;  
+  display: flex;
+  justify-content: space-between; /* 左右分佈 */
+  align-items: flex-start;        /* 頂部對齊，文字與圖片齊平 */
+  max-width: 1000px;             /* 和 Header 對齊 */
+  margin: 40px auto;             /* 與螢幕留白 */
+  padding: 0 40px;               /* 左右內縮，對齊 Yen Chun Wang */
+  gap: 40px;                      /* 文字與圖片間距 */
 }
 
-/* 左側文字 */
+/* 左側文字區域 */
 .intro-text {
-  flex: 2;                     /* 文字區域佔比較大 */
+  flex: 2;                        /* 左側占比較大 */
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
+  max-width: 600px;               /* 避免文字太寬 */
 }
 
-/* 右側圖片 */
+/* 右側圖片區域 */
 .intro-image {
-  flex: 1;                      /* 圖片區域佔比較小 */
+  flex: 1;                         /* 右側占比較小 */
   display: flex;
   justify-content: center;
 }
 
 .intro-image img {
-  max-width: 180px;        /* 最大寬度限制，避免太大 */
-  width: 100%;             /* 在小螢幕時自動縮小 */
-  height: auto;            /* 保持圖片比例 */
-  border-radius: 10px;      /* 圓角 */
-  object-fit: cover;        /* 確保圖片比例好看 */
-  display: block;           /* 移除圖片下方的空隙 */
+  max-width: 280px;                /* 控制圖片大小 */
+  border-radius: 12px;             /* 圓角 */
+  object-fit: cover;               /* 保持比例 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 添加輕微陰影 */
 }
 
 
