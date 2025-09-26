@@ -34,7 +34,7 @@ body {
   justify-content: space-between; /* 左右分佈 */
   align-items: flex-start;        /* 頂部對齊，文字與圖片齊平 */
   max-width: 1000px;             /* 和 Header 對齊 */
-  margin: 40px auto;             /* 與螢幕留白 */
+  margin: 40px auto 61px;             /* 與螢幕留白 */
   padding: 0 40px;               /* 左右內縮，對齊 Yen Chun Wang */
   gap: 40px;                      /* 文字與圖片間距 */
 }
