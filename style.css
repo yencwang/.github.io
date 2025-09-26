@@ -28,6 +28,39 @@ body {
   color: #111;
 }
 
+/* 讓 intro-text 和 intro-image 排成左右 */
+.intro-container {
+  display: flex;              /* 啟用 Flexbox */
+  justify-content: space-between; /* 左右分開 */
+  align-items: center;        /* 垂直置中 */
+  gap: 20px;                  /* 文字與圖片的間距 */
+  max-width: 1000px;          /* 最大寬度，避免太寬 */
+  margin: 0 auto;             /* 置中整個區塊 */
+  padding: 20px;
+}
+
+/* 左側文字 */
+.intro-text {
+  flex: 2;                     /* 文字區域佔比較大 */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 右側圖片 */
+.intro-image {
+  flex: 1;                      /* 圖片區域佔比較小 */
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image img {
+  max-width: 200px;             /* 限制圖片大小 */
+  border-radius: 10px;          /* 圓角 */
+  object-fit: cover;             /* 保持圖片比例 */
+}
+
+
+
 /* ===== 導航列 ===== */
 .navbar a {
   margin-left: 20px;
